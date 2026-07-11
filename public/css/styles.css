@@ -346,7 +346,7 @@ body{
     .swiper-slide{
         width:92%;
         height:auto;
-        aspect-ratio:16/7;
+        aspect-ratio:16/9;
     }
 
 }
