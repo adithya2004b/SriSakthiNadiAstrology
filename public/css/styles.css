@@ -166,7 +166,7 @@ body{
 
     width:500px;
 
-    height: 500px;
+    height: 700px;
 
     left:-200px;
 
@@ -188,7 +188,7 @@ body{
 
     width:500px;
 
-    height:500px;
+    height:700px;
 
     right:-180px;
 
@@ -230,13 +230,14 @@ body{
 } */
 .swiper-slide{
     width:min(900px,70vw);
-    aspect-ratio:16/7;
+    aspect-ratio:16/8;
 }
 
 .swiper-slide img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .swiper-slide img{
