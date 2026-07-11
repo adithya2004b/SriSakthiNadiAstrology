@@ -18,17 +18,7 @@ const KANDAMS = [
   { id: 13, title: 'Previous Birth Karma (Shanthi)', desc: 'Sins committed in previous births causing current suffering, and specific remedies (Pariharas) to neutralize them.' },
   { id: 14, title: 'Mantra Protection (Deeksha)', desc: 'Sacred mantras and talismans to protect from evil eyes, black magic, and severe doshas.' },
 ];
-const header = document.getElementById("site-header");
 
-window.addEventListener("scroll", () => {
-
-    if (window.scrollY > 30) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
-
-});
 const swiper = new Swiper(".mySwiper", {
 
     loop:true,
