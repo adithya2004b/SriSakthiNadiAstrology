@@ -1,6 +1,5 @@
 // ===== Constants =====
 const CONTACT_EMAIL = 'adithya3572@gmail.com';
-emailjs.init("9l8ZxwBU8tXEWL6Bz");
 
 const KANDAMS = [
   { id: 1, title: 'General Chapter', desc: 'Overview of your entire life, family, character, and brief predictions for all other chapters.' },
