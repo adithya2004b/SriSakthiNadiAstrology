@@ -81,18 +81,16 @@ const navToggle = document.getElementById("nav-toggle");
 const navMobile = document.getElementById("nav-mobile");
 const navClose = document.getElementById("nav-close");
 
-function closeMobileNav() {
-    navToggle.classList.remove("is-open");
-    navToggle.setAttribute("aria-expanded", "false");
-    navMobile.classList.remove("is-open");
-    document.body.classList.remove("menu-open");
-}
-
 function openMobileNav() {
     navToggle.classList.add("is-open");
-    navToggle.setAttribute("aria-expanded", "true");
     navMobile.classList.add("is-open");
     document.body.classList.add("menu-open");
+}
+
+function closeMobileNav() {
+    navToggle.classList.remove("is-open");
+    navMobile.classList.remove("is-open");
+    document.body.classList.remove("menu-open");
 }
 
 navToggle.addEventListener("click", () => {
