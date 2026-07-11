@@ -1128,6 +1128,45 @@ PORTRAIT GALLERY
 @media (min-width: 640px) {
   .fab span { display: inline; }
 }
+/* ==========================
+   Mobile Floating Actions
+========================== */
+@media (max-width:768px){
+
+    .floating-actions{
+        right:12px;
+        bottom:12px;
+        gap:10px;
+    }
+
+    .fab{
+        width:52px;
+        height:52px;
+        padding:0;
+        border-radius:50%;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .fab span{
+        display:none !important;
+    }
+
+    .fab svg{
+        width:24px;
+        height:24px;
+    }
+
+    .fab--call,
+    .fab--whatsapp,
+    .fab--book,
+    .fab--top{
+        width:52px;
+        height:52px;
+        padding:0;
+    }
+
+}
 
 /* ===== Modal ===== */
 .modal-overlay {
@@ -1216,41 +1255,62 @@ PORTRAIT GALLERY
 }
 
 /* ==========================
-   Mobile Floating Actions
+   Contact Section Mobile Fix
 ========================== */
 @media (max-width:768px){
 
-    .floating-actions{
-        right:12px;
-        bottom:12px;
-        gap:10px;
+    .contact,
+    .contact__grid,
+    .contact__info,
+    .contact__panel,
+    .contact-form-card,
+    .map-embed{
+        width:100%;
+        max-width:100%;
+        overflow:hidden;
     }
 
-    .fab{
-        width:52px;
-        height:52px;
-        padding:0;
-        border-radius:50%;
+    .contact-form-card{
+        padding:1.25rem;
+    }
+
+    .form__row{
+        grid-template-columns:1fr;
+    }
+
+    .form__field input,
+    .form__field textarea,
+    .form__field select{
+        width:100%;
+        min-width:0;
+    }
+
+    iframe{
+        width:100% !important;
+        max-width:100%;
+    }
+
+    .contact__item{
+        flex-wrap:wrap;
+    }
+
+    .contact__item a,
+    .contact__item p{
+        word-break:break-word;
+        overflow-wrap:anywhere;
+    }
+
+    .footer{
+        overflow:hidden;
+    }
+
+    .footer__grid{
+        gap:2rem;
+    }
+
+    .footer__legal{
+        flex-wrap:wrap;
         justify-content:center;
-        align-items:center;
-    }
-
-    .fab span{
-        display:none !important;
-    }
-
-    .fab svg{
-        width:24px;
-        height:24px;
-    }
-
-    .fab--call,
-    .fab--whatsapp,
-    .fab--book,
-    .fab--top{
-        width:52px;
-        height:52px;
-        padding:0;
     }
 
 }
