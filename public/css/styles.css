@@ -552,6 +552,24 @@ body{
   flex-direction: column;
   gap: 1rem;
 } */
+ .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: transparent;
+    transition: background .35s ease, box-shadow .35s ease;
+}
+
+.header.scrolled{
+    background: rgba(255,255,255,.98);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
  body.menu-open{
     overflow:hidden;
 }
