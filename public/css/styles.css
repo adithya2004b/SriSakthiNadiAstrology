@@ -143,7 +143,7 @@ body{
 
     position:relative;
 
-    padding:0;
+    padding:0 0 1rem;
     margin:auto;
 
     background:linear-gradient(
@@ -167,7 +167,7 @@ body{
 
     width:500px;
 
-    height: 700px;
+    height: 500px;
 
     left:-200px;
 
@@ -189,7 +189,7 @@ body{
 
     width:500px;
 
-    height:700px;
+    height:500px;
 
     right:-180px;
 
@@ -638,7 +638,7 @@ body{
 .about__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 4rem;
+  gap: 3rem;
   align-items: center;
 }
 
