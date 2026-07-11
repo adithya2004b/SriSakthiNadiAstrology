@@ -143,7 +143,8 @@ body{
 
     position:relative;
 
-    padding:5rem 0;
+    padding:0;
+    margin:auto;
 
     background:linear-gradient(
         to bottom,
@@ -206,7 +207,7 @@ body{
 
     overflow:visible;
 
-    padding:20px 0 70px;
+    padding:0;
 
 }
 
