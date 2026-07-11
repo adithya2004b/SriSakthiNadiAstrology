@@ -661,7 +661,7 @@ PORTRAIT GALLERY
 
     overflow:hidden;
 
-    border-radius:15px;
+    border-radius:0px;
 
     aspect-ratio:4/5;
 
@@ -1213,4 +1213,44 @@ PORTRAIT GALLERY
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   .hero__scroll-cue { animation: none; }
+}
+
+/* ==========================
+   Mobile Floating Actions
+========================== */
+@media (max-width:768px){
+
+    .floating-actions{
+        right:12px;
+        bottom:12px;
+        gap:10px;
+    }
+
+    .fab{
+        width:52px;
+        height:52px;
+        padding:0;
+        border-radius:50%;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .fab span{
+        display:none !important;
+    }
+
+    .fab svg{
+        width:24px;
+        height:24px;
+    }
+
+    .fab--call,
+    .fab--whatsapp,
+    .fab--book,
+    .fab--top{
+        width:52px;
+        height:52px;
+        padding:0;
+    }
+
 }
