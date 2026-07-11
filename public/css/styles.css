@@ -631,7 +631,141 @@ body{
   0%, 100% { transform: translate(-50%, 0); }
   50% { transform: translate(-50%, -10px); }
 }
+/*=====================================
+PORTRAIT GALLERY
+======================================*/
 
+.portrait-gallery{
+
+    background: var(--ivory-soft);
+
+    padding:1rem 0;
+
+}
+
+.portrait-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+    margin-top:10px;
+
+}
+
+.portrait-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+    aspect-ratio:4/5;
+
+    cursor:pointer;
+
+    box-shadow:0 20px 50px rgba(2,44,34,.12);
+
+    transition:2s ease;
+
+}
+
+.portrait-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:transform .7s ease;
+
+}
+
+.portrait-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(2,44,34,.35),
+        transparent 45%
+    );
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.portrait-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 70px rgba(2,44,34,.18);
+
+}
+
+.portrait-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.portrait-card:hover::after{
+
+    opacity:1;
+
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .portrait-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .portrait-gallery{
+
+        padding:4rem 0;
+
+    }
+
+    .portrait-grid{
+
+        gap:15px;
+
+    }
+
+}
+
+@media(max-width:520px){
+
+    .portrait-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
 /* ===== About ===== */
 .about { background: var(--ivory); position: relative; overflow: hidden; }
 
