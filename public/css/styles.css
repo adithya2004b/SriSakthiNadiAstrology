@@ -231,7 +231,7 @@ body{
 } */
 .swiper-slide{
     width:min(900px,70vw);
-    aspect-ratio:16/8;
+    aspect-ratio:16/7;
 }
 
 .swiper-slide img{
