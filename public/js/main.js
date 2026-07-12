@@ -339,3 +339,4 @@ bookingForm.addEventListener('submit', (e) => {
 
 // ===== Footer year =====
 document.getElementById('footer-year').textContent = new Date().getFullYear();
+
