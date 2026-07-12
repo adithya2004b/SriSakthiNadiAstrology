@@ -706,13 +706,169 @@ body.menu-open .header{
   text-align: center;
   max-width: 860px;
 }
+.hero__title{
 
-.hero__title {
-  font-size: clamp(2.4rem, 6vw, 4.5rem);
-  font-weight: 700;
-  color: var(--white);
-  margin-top: 1.25rem;
-  text-shadow: 0 6px 30px rgba(0,0,0,0.4);
+    position:relative;
+
+    display:inline-block;
+
+    font-family:var(--font-serif);
+
+    font-size:clamp(2.8rem,6vw,5.2rem);
+
+    font-weight:700;
+
+    line-height:1.15;
+
+    letter-spacing:.04em;
+
+    color:#fff;
+
+    margin-top:1.5rem;
+
+    padding:18px 0;
+
+    text-align:center;
+
+    text-shadow:
+        0 4px 10px rgba(0,0,0,.35),
+        0 10px 35px rgba(0,0,0,.25);
+
+    animation:titleFade 1.2s ease-out;
+
+}
+
+/* Top decorative line */
+
+.hero__title::before{
+
+    content:"✦ ✦ ✦";
+
+    display:block;
+
+    color:var(--gold);
+
+    font-size:1rem;
+
+    letter-spacing:12px;
+
+    margin-bottom:16px;
+
+    animation:fadeDown 1s ease;
+
+}
+
+/* Bottom decorative line */
+
+.hero__title::after{
+
+    content:"";
+
+    display:block;
+
+    width:180px;
+
+    height:2px;
+
+    margin:18px auto 0;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        var(--gold),
+        transparent
+    );
+
+    animation:expandLine 1.2s ease;
+
+}
+
+/* Animate title */
+
+@keyframes titleFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Decorative stars */
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Line animation */
+
+@keyframes expandLine{
+
+    from{
+
+        width:0;
+
+        opacity:0;
+
+    }
+
+    to{
+
+        width:180px;
+
+        opacity:1;
+
+    }
+
+}
+
+/* Desktop hover */
+
+@media (hover:hover){
+
+.hero__title:hover{
+
+    letter-spacing:.06em;
+
+    transition:.4s ease;
+
+}
+
+.hero__title:hover::after{
+
+    width:240px;
+
+    transition:.4s ease;
+
+}
+
 }
 
 .hero__subtitle {
