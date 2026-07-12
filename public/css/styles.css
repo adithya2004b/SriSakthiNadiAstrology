@@ -1767,10 +1767,9 @@ MATCH MAKING
 ==============================*/
 
 .matchmaking{
-
-    background: var(--ivory-soft);
-
+    background:#F8F1DE;
 }
+
 
 .matchmaking__wrapper{
 
