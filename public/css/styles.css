@@ -1438,3 +1438,154 @@ border-top: 4px solid var(--gold);
     }
 
 }
+
+/*==============================
+NADI ASTROLOGY
+===============================*/
+
+.nadi{
+
+    background: var(--ivory-soft);
+
+}
+
+.nadi__grid{
+   background:var(--emerald-soft);
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    margin-top:60px;
+
+}
+
+.nadi__image{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.nadi__image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:transform .7s ease;
+
+}
+
+.nadi__image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.nadi__content h3{
+
+    font-size:2rem;
+
+    color:var(--emerald);
+
+    margin-bottom:24px;
+
+}
+
+.nadi__content p{
+
+    color:var(--muted);
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+
+.nadi__cards{
+
+    margin-top:80px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+    
+
+}
+
+.nadi-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:40px 28px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(2,44,34,.08);
+
+    transition:.4s;
+
+}
+
+.nadi-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:50px 50px 50px rgba(2,44,34,.12);
+    
+}
+
+.nadi-card img{
+  
+   border-radius: 22%;
+    width:85px;
+
+    height:85px;
+
+    object-fit:contain;
+
+    margin-bottom:22px;
+
+}
+
+.nadi-card h4{
+
+    color:var(--emerald);
+
+    margin-bottom:14px;
+
+}
+
+.nadi-card p{
+
+    color:var(--muted);
+
+    line-height:1.7;
+
+}
+
+@media(max-width:992px){
+
+    .nadi__grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .nadi__cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
