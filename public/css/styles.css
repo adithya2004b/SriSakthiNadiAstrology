@@ -461,6 +461,22 @@ body{
 
     box-shadow: 0 4px 15px rgba(0,0,0,.15);
 }
+.brand__mark_phone{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(245,158,11,.35);
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
+}
 
 .brand__mark img{
     width:100%;
@@ -692,7 +708,7 @@ body.menu-open .header{
 }
 
 .hero__title {
-  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  font-size: clamp(4.5rem, 10vw, 4.5rem);
   font-weight: 700;
   color: var(--white);
   margin-top: 1.25rem;
