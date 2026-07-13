@@ -1,5 +1,5 @@
 // ===== Constants =====
-const CONTACT_EMAIL = 'adithya3572@gmail.com';
+const CONTACT_EMAIL = 'nadiastrologyhyderabad@gmail.com';
 
 const KANDAMS = [
   { id: 1, title: 'General Chapter', desc: 'Overview of your entire life, family, character, and brief predictions for all other chapters.' },
