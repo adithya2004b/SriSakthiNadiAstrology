@@ -1465,7 +1465,7 @@ border-top: 4px solid var(--gold);
 }
 
 /* ===== Modal ===== */
-.modal-overlay {
+/* .modal-overlay {
   position: fixed;
   inset: 0;
   background: rgba(2,44,34,0.6);
@@ -1479,9 +1479,38 @@ border-top: 4px solid var(--gold);
   pointer-events: none;
   transition: opacity 0.25s ease;
 }
-.modal-overlay.is-open { opacity: 1; pointer-events: auto; }
+.modal-overlay.is-open { opacity: 1; pointer-events: auto; } */
+.modal-overlay{
 
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(0,0,0,.55);
+
+    z-index:10000;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.3s;
+
+}
+
+.modal-overlay.is-open{
+
+    opacity:1;
+    visibility:visible;
+
+}
 .modal {
+     position:relative;
+
+    z-index:10001;
   width: 100%;
   max-width: 640px;
   max-height: 90vh;

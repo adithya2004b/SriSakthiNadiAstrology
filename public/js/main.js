@@ -226,9 +226,20 @@ const modalOverlay = document.getElementById('modal-overlay');
 const bookingForm = document.getElementById('booking-form');
 const bookingSuccess = document.getElementById('booking-success');
 
+// function openModal() {
+//   modalOverlay.classList.add('is-open');
+//   document.body.style.overflow = 'hidden';
+// }
 function openModal() {
-  modalOverlay.classList.add('is-open');
-  document.body.style.overflow = 'hidden';
+
+    closeMobileNav();
+
+    document.body.classList.remove("menu-open");
+
+    modalOverlay.classList.add("is-open");
+
+    document.body.style.overflow = "hidden";
+
 }
 
 function closeModal() {
